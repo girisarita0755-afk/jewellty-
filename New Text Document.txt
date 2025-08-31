@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cool Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+.hero {
+  height: 90vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  position: relative;
+  background-image: url(jewellery_collage_banner.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2); /* हल्का dark overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #ff4d6d;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e63956;
+}
+
+ .swiper {
+      width: 100%;
+      height: 360px; /* apni need ke hisaab se change kar sakte ho */
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(0,0,0,.12);
+      background:#000;
+    }
+
+    /* Slide content */
+    .swiper-slide {
+      position: relative;
+      color: #fff;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 16px;
+    }
+    .swiper-slide img {
+      position:absolute; inset:0;
+      width:100%; height:360px; object-fit:cover; filter:brightness(.8);
+    }
+    .caption {
+      position: relative;
+      z-index: 1;
+      background: rgba(0,0,0,.35);
+      padding: 8px 12px; border-radius: 8px;
+      font-size: 16px;
+    }
+
+    /* Customize arrows color */
+    .swiper-button-prev, .swiper-button-next { color: #fff; }
+    /* Customize pagination dots */
+    .swiper-pagination-bullet { background:#ffffffaa; }
+    .swiper-pagination-bullet-active { background:#fff; }
+
+
+    main {
+   
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      background: #dbdbdb;
+    }
+
+    /* Box */
+    .box {
+      background: lightblue;
+      border: 2px,solid,#ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      text-align: center;
+      height: 280px;
+      width: 280px;
+      margin:20px;
+      display: inline-block;
+    
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    .box img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .box p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: black;
+    }
+
+    /* Footer */
+    footer {
+      background-color:#79828d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+
+<P> </P>
+
+
+  </header>
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>✨ Dailyra Jewellery ✨</h1>
+
+    <p>Shine with Elegance – Discover Our Exclusive Collection</p>
+    <a href="#products" class="btn">scroll down</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <!-- Body with 25 boxes -->
+  <main>
+    <div class="box">
+      <img src="WhatsApp Image 2025-08-29 at 7.53.03 PM.jpeg" alt="Image">
+
+      <p>jewellary hamper </p>
+        <p> price-1500</p>
+    </div>
+
+    <div class="box">
+      <img src="1.jpeg" alt="Image">
+
+      <p>It's viral suff braclet </p>
+        <p> price-199</p>
+    </div>
+
+    <div class="box">
+      <img src="2.jpeg" alt="Image">
+      <p>It's vintage Ring </p>
+      <p> price 199</p>
+    </div>
+    <div class="box">
+      <img src="3.jpeg" alt="Image">
+      <p>Anti-tarnish pearl hoop earrings</p>
+       <p>Price-249</p>
+    </div>
+
+    <div class="box">
+      <img src="4.jpeg" alt="Image">
+      <p>Golden Englance Hoop Earings</p>
+       <P>Price-249</P>
+    </div>
+    <div class="box">
+      <img src="5.jpeg" alt="Image">
+      <p>Shine on with our anti-tarnish gold hoop Earings</p>
+       <p>Price-249</p>
+    </div>
+
+    <div class="box">
+      <img src="6.jpeg" alt="Image">
+      <p>Viral V shaped adjustable finger ring</p>
+       <p>Price-199</p>
+      <p> price- </p>
+    </div>
+    <div class="box">
+      <img src="7.jpeg" alt= "Image">
+      <p>Bangle style cuff braclet</p>
+      <p> price-189 </p>
+    </div>
+
+    <div class="box">
+      <img src="8.jpeg" alt="Image">
+      <p>Earings with pearls and sparkling stone</p>
+       <p> price-239</p>
+    </div>
+    <div class="box">
+      <img src= "9.jpeg">
+      <p>Heart themed wraparround braclet</p>
+       <p> price-239</p>
+    </div>
+
+    
+    <div class="box">
+      <img src="10.jpeg" alt="Image">
+    
+      <p>Set of 10 floral adjustable finger ring  </p>
+      <p> price-219</p>
+    </div>
+
+    
+    <div class="box">
+      <img src="12.jpeg" alt="Image">
+      <p>Necklace</p>
+      <p>Price-249</p>
+    </div>
+
+    <div class="box">
+      <img src="11.jpeg" alt="Image">
+      <p>Bracelet</p>
+      <p>Price-299</p>
+    </div>
+    <div class="box">
+      <img src="13.jpeg" alt="Image">
+      <p>Necklace</p>
+      <p>Price-299</p>
+    </div>
+
+   
+    <div class="box">
+      <img src="14.jpeg" alt="Image">
+      <p>Necklace</p>
+      <p>Price-249</p>
+    </div>
+
+    <div class="box">
+      <img src="15.jpeg" alt="Image">
+      <p>Heart themed rope chain</p>
+      <p>Price-269</p>
+    </div>
+    <div class="box">
+      <img src="16.jpeg" alt="Image">
+      <p>Layerd Nacklace</p>
+      <p>Price-269</p>
+    </div>
+
+    <div class="box">
+      <img src="17.jpeg" alt="Image">
+      <p>Heart Nacklace</p>
+      <p>Price-269</p>
+    </div>
+    <div class="box">
+      <img src="18.jpeg" alt="Image">
+      <p>Silver platted Nacklace</p>
+      <p>Price-249</p>
+    </div>
+
+    <div class="box">
+      <img src="WhatsApp Image 2025-08-30 at 7.33.09 PM.jpeg" alt="Image">
+      <p>Necklace (daily wearable, waterproof)</p>
+      <p>Price-249</p>
+    </div>
+    <div class="box">
+      <img src="20.jpeg" alt="Image">
+      <p>Nacklace</p>
+      <p>Price-259</p>
+    </div>
+
+    <div class="box">
+      <img src="21.jpeg" alt="Image">
+      <p>Bracelet</p>
+      <p>Price-249</p>
+    </div>
+     <div class="box">
+      <img src="22.jpeg" alt="Image">
+      <p>Rose gold platted</p>
+         <p> price- 239</p>
+    </div>
+</div>
+     <div class="box">
+      <img src="23.jpeg" alt="Image">
+      <p> Rings</p>
+      <p>Price-219</p>
+    </div>
+  <div class="box">
+      <img src="24.jpeg" alt="Image">
+      <p>Star themed Necklace</p>
+      <p>Price-229</p>
+    </div>
+    <div class="box">
+      <img src="25.jpeg" alt="Image">
+      <p>Pack of 5</p>
+      <p>Price-259</p>
+    </div>
+    <!-- Add more boxes like this until 25 -->
+    <!-- Tip: Copy-paste these divs -->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>💥Free Delivery Above 400rs💥</p>
+ 
+    <p>Contact us: 
+      <a href="https://wa.me/9778099747" target="_">WhatsApp</a> | 
+      <a href="https://instagram.com/__dailyra__" target="__dailyra__">Instagram </a>
+    </p>
+  </footer>
+   
+</body>
+</html>
+
+
+
+
+
+</body>
+</html
